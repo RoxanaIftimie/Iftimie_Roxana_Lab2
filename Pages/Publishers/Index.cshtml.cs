@@ -20,7 +20,7 @@ namespace Iftimie_Roxana_Lab2.Pages.Publishers
         }
 
         public IList<Publisher> Publisher { get;set; } = default!;
-
+        public PublisherIndexData PublisherData { get; set; }
         public async Task OnGetAsync()
         {
             if (_context.Publisher != null)
